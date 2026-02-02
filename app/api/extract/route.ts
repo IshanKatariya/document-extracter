@@ -24,8 +24,8 @@ export async function POST(request: NextRequest) {
     // Select model based on document type (can be overridden with GEMINI_MODEL env)
     const defaultEnvModel = process.env.GEMINI_MODEL;
     const modelName = defaultEnvModel ?? (documentType === 'handwritten' || documentType === 'mixed'
-      ? 'models/gemini-2.5-pro'
-      : 'models/gemini-2.5-flash');
+      ? 'models/gemini-1.5-pro'
+      : 'models/gemini-1.5-flash');
 
     // Track which model we end up using (useful when fallback occurs)
     let modelNameUsed = modelName;
