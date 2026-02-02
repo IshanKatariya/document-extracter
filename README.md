@@ -114,14 +114,12 @@ AI-powered extraction with:
 │ Classification  │ → Handwritten vs Typed detection
 └──────┬──────────┘
        │
-       ├──────────────┬──────────────┐
-       ▼              ▼              ▼
-   Handwritten     Typed          Mixed
-       │              │              │
-       ▼              ▼              ▼
-  Gemini Pro   Gemini Flash    Gemini Pro
-       │              │              │
-       └──────────────┴──────────────┘
+       ├──────────────┬
+       │              │              
+       ▼              ▼             
+  Gemini Pro   Gemini Flash    
+       │              │             
+       └──────────────┴
                       │
                       ▼
               ┌─────────────┐
